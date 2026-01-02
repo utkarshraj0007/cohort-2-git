@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Random Portfolio — Your Name</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Your Name</h1>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h2>Hello — I'm <span class="accent">Your Name</span></h2>
+          <p class="lead">A random portfolio showcasing a few projects, skills and a little about me. Built with ❤️ and simple HTML/CSS.</p>
+          <a class="btn" href="#projects">View Projects</a>
+        </div>
+        <img src="https://via.placeholder.com/320x320?text=Photo" alt="Portrait" class="hero-img">
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About</h3>
+      <p>I am a passionate developer who loves creating clean interfaces and intuitive user experiences. I enjoy learning new technologies and turning ideas into production-ready projects.</p>
+      <ul class="meta">
+        <li><strong>Location:</strong> Anywhere</li>
+        <li><strong>Available for:</strong> Freelance / Contract</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="https://via.placeholder.com/600x360?text=Project+1" alt="Project 1">
+          <h4>Project One</h4>
+          <p>A short description of project one — what it does and the tech used.</p>
+          <a class="card-btn" href="#">Live demo</a>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/600x360?text=Project+2" alt="Project 2">
+          <h4>Project Two</h4>
+          <p>A short description of project two — a fun, small app with interactive features.</p>
+          <a class="card-btn" href="#">Source</a>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/600x360?text=Project+3" alt="Project 3">
+          <h4>Project Three</h4>
+          <p>A short description of project three — focused on accessibility and performance.</p>
+          <a class="card-btn" href="#">Details</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h3>Skills</h3>
+      <div class="skill-list">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Accessibility</span>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>If you'd like to work together, drop me a message.</p>
+      <form class="contact-form" action="#" onsubmit="alert('This form is demo-only. Replace action with your endpoint.'); return false;">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Hello..." required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Name — Built with simple HTML & CSS</p>
+      <nav class="social">
+        <a href="#">Twitter</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // small script to set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
